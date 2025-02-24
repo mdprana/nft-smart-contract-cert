@@ -8,11 +8,11 @@ import "forge-std/console.sol";
 contract DeployCertificateScript is Script {
     function run() external {
         vm.startBroadcast();
-        
+
         CertificateNFT nft = new CertificateNFT();
-        
+
         console.log("CertificateNFT deployed at:", address(nft));
-        
+
         vm.stopBroadcast();
     }
 }
